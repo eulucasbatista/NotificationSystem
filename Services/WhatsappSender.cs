@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace NotificationSystem.Services
 {
-    public class WhatsappSander : INotificationSender
+    public class WhatsappSender : INotificationSender
     {
         private readonly INotificationFormatter _formatter;
         private readonly IAppLogger _logger;
 
-        public string Channel => "Email";
+        public string Channel => "Whatsapp";
 
         public WhatsappSander(INotificationFormatter formatter, IAppLogger logger)
         {
