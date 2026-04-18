@@ -13,6 +13,7 @@ services.AddSingleton<INotificationFormatter, DefaultNotificationFormatter>();
 // 3) Múltiplas implementações do mesmo contrato (OCP)
 services.AddSingleton<INotificationSender, EmailSender>();
 services.AddSingleton<INotificationSender, SmsSender>();
+services.AddSingleton<INotificationSender, WhatsappSender>();
 services.AddSingleton<INotificationSender, PushSender>();
 
 services.AddSingleton<NotificationService>();

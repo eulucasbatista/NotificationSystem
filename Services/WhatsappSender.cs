@@ -15,7 +15,7 @@ namespace NotificationSystem.Services
 
         public string Channel => "Whatsapp";
 
-        public WhatsappSander(INotificationFormatter formatter, IAppLogger logger)
+        public WhatsappSender(INotificationFormatter formatter, IAppLogger logger)
         {
             _formatter = formatter;
             _logger = logger;
